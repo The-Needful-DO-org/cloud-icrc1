@@ -1,0 +1,18 @@
+{
+  "canisters": {
+    "icrc1-ledger": {
+      "type": "custom",
+      "candid": "https://raw.githubusercontent.com/dfinity/ic/f89cf257a4e88a5e2f6f29ab50ad4a49b0cb514d/rs/rosetta-api/icrc1/ledger/icrc1.did",
+      "wasm": "https://download.dfinity.systems/ic/f89cf257a4e88a5e2f6f29ab50ad4a49b0cb514d/canisters/ic-icrc1-ledger.wasm.gz",
+      "init_arg": "(variant {Init = record { token_symbol = \"CLOUD\"; token_name = \"CLOUD TOKEN\"; minting_account = record { owner = principal \"MINTING_PRINCIPAL\";}; transfer_fee = 100_000_000; metadata = vec {}; feature_flags = opt record{icrc2 = false; archive = false}; initial_balances = vec { record { record { owner = principal \"INITIAL_PRINCIPAL\"; }; 42_069_000_000_000_000; }; }; archive_options = record { num_blocks_to_archive = 1000; trigger_threshold = 1000; controller_id = principal \"LEDGER_CANISTER_ID\"; cycles_for_archive_creation = opt 10000000000000; }; }} )"
+    }
+  },
+    "defaults": {
+      "build": {
+        "args": "",
+        "packtool": ""
+      }
+    },
+    "output_env_file": ".env",
+    "version": 1
+}

@@ -1,0 +1,18 @@
+{
+  "canisters": {
+    "icrc1-ledger": {
+      "type": "custom",
+      "candid": "https://github.com/dfinity/ic/releases/download/ledger-suite-icrc-2024-11-28/ledger.did",
+      "wasm": "https://github.com/dfinity/ic/releases/download/ledger-suite-icrc-2024-11-28/ic-icrc1-ledger.wasm.gz",
+      "init_arg": "(variant { Upgrade = null })"
+    }
+  },
+    "defaults": {
+      "build": {
+        "args": "",
+        "packtool": ""
+      }
+    },
+    "output_env_file": ".env",
+    "version": 1
+}
