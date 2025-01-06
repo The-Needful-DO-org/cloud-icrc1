@@ -10,22 +10,14 @@ This repo will make some changes to the CLOUD ICRC1 ledger canister.
 
 These instructions are for the controller of the CLOUD ledger canister `pcj6u-uaaaa-aaaak-aewnq-cai`
 
-TODO: *Instructions for creating snapshot of canister state
+Use a script to change the name and add a logo.
 
-Deploy 3 upgrades located in the `upgrade` folders.
-
-The first upgrade uses a script to change the name and add a logo.
-
-`cd upgrade1`
+`cd ./changeNameAddLogo`
 
 `sh ./update_name_add_logo.sh`
 
-The next 2 upgrades are simply updating the wasm.
 
-`cd ../upgrade2`
+Deploy 3 upgrades located in the `upgrade` folders.
 
-`dfx deploy --ic`
+TODO: thorough testing needed
 
-`cd ../upgrade3`
-
-`dfx deploy --ic`

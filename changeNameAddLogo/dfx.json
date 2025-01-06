@@ -1,0 +1,17 @@
+{
+  "canisters": {
+    "icrc1-ledger": {
+      "type": "custom",
+      "candid": "https://raw.githubusercontent.com/dfinity/ic/794fc5b9341fa8f6a0e8f219201c35f0b5727ab9/rs/rosetta-api/icrc1/ledger/ledger.did",
+      "wasm": "https://download.dfinity.systems/ic/794fc5b9341fa8f6a0e8f219201c35f0b5727ab9/canisters/ic-icrc1-ledger.wasm.gz"
+    }
+  },
+    "defaults": {
+      "build": {
+        "args": "",
+        "packtool": ""
+      }
+    },
+    "output_env_file": ".env",
+    "version": 1
+}
