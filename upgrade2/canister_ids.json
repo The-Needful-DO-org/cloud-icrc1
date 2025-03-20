@@ -1,5 +1,8 @@
 {
   "icrc1-ledger": {
     "ic": "pcj6u-uaaaa-aaaak-aewnq-cai"
+  },
+  "icrc1_index_canister": {
+    "ic": "72uqs-pqaaa-aaaak-aes7a-cai"
   }
 }
